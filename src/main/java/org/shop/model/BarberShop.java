@@ -40,8 +40,12 @@ public class BarberShop {
         this.barber = barber;
     }
 
-    public String fulfillService() {
-        //barber.provideService(recordList);
-        return "";
+    public String fulfillService(Customer customer) {
+        if (customer != null && recordList != null) {
+            barber.provideService(recordList, customer);
+            return customer.getName() + " has accepted service!";
+        } else {
+            return "Customer should exist!";
+        }
     }
 }

@@ -18,5 +18,15 @@ public class Record {
         this.assignedDay = assignedDay;
     }
 
+    public String getCustomerName() {
+        return customerName;
+    }
 
+    public ServiceType getServiceOrdered() {
+        return serviceOrdered;
+    }
+
+    public WeekDay getAssignedDay() {
+        return assignedDay;
+    }
 }

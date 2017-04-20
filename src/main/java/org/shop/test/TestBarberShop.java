@@ -25,11 +25,7 @@ public class TestBarberShop {
         barberShop.createRecord(customer);
         barberShop.assignBarber(barber);
 
-
-
-
         //execute order
-        barberShop.fulfillService();
-
+        barberShop.fulfillService(customer);
     }
 }

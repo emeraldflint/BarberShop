@@ -5,10 +5,10 @@ package org.shop.services;
  */
 public interface Services {
 
-    void takeHairCut();
+    void takeHairCut(String customerName);
 
-    void takeWashHair();
+    void takeWashHair(String customerName);
 
-    void takeBeardBrush();
+    void takeBeardBrush(String customerName);
 
 }

@@ -18,7 +18,7 @@ public class Customer {
     private WeekDay choosenWeekday;
 
     private ServiceType choosenServiceType;
-   // private
+    // private
 
     public Customer(String name, Gender gender, int age) {
         this.name = name;
@@ -37,8 +37,8 @@ public class Customer {
         return choosenServiceType;
     }
 
-    public String makeAnAppointment(WeekDay weekDay) {
-        return "";
+    public void makeAnAppointment(WeekDay weekDay) {
+        this.choosenWeekday = weekDay;
     }
 
     public String getName() {
